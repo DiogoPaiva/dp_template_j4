@@ -10,7 +10,10 @@
 defined('_JEXEC') or die;
 
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-JHTML::_('behavior.modal'); 
+
+JHtml::_('bootstrap.modal', '.modal');
+
+
 $doc = JFactory::getDocument();
 // Create shortcuts to some parameters.
 $params  = $this->item->params;

@@ -19,22 +19,16 @@ $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
 
-if($task == "edit" || $layout == "form" )
-{
+if($task == "edit" || $layout == "form" ) {
 	$fullWidth = 1;
-}
-else
-{
+} else {
 	$fullWidth = 0;
 }
-
-// Add JavaScript Frameworks
-JHtml::_('bootstrap.framework');
 
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" class='<?php print_r($htmlclass)?>' >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" class='errorPage' >
 <head>
 <jdoc:include type="head" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />

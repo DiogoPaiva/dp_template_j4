@@ -93,7 +93,6 @@
       "use strict";
 
       this.slider();
-      this.imgParallax();
 
       $(document).on("click", ".c-hamburger", function () {
         $(this).toggleClass("is-active");
@@ -105,33 +104,7 @@
       $("#slider li:odd").addClass("odd");
       
     },
-    imgParallax: function () {
-      //Paralax
-      if ($("html").is(".big, .large")) {
-        $(".slider-img").css("margin-top", $(window).scrollTop() / 2);
-        $(".wrapper-slide ").css("margin-top", $(window).scrollTop() / 4);
 
-        $(window).scroll(function () {
-          //BANNER
-          $(".slider-img").css("margin-top", $(window).scrollTop() / 2);
-          $(".wrapper-slide ").css("margin-top", $(window).scrollTop() / 4);
-
-          //UpButton
-          var ws = $(window).scrollTop();
-          var wh = $("body").height();
-          var header = $(".full-header").height() + $(".full-width-banner").height();
-
-          if (ws < header) {
-            $("#back-top").css({ opacity: "0" });
-          } else {
-            $("#back-top").css({ opacity: "1", bottom: "20px" });
-          }
-        });
-      } else {
-        $(window).unbind("scroll");
-        $(".slider-img, .wrapper-slide").css("margin-top", 0);
-      }
-    },
     slider: function () {
       var pager = "";
       // console.log("CONTADOR: " + $("#slider li").length);

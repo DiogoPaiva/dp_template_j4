@@ -106,8 +106,6 @@ else
 
 $doc->addScript('templates/'.$this->template.'/js/jquery.bxslider.min.js', 'text/javascript');
 $doc->addScript('templates/'.$this->template.'/js/image-scale.min.js', 'text/javascript');
-$doc->addScript('templates/'.$this->template.'/js/jquery.mousewheel.min.js', 'text/javascript');
-$doc->addScript('templates/'.$this->template.'/js/jquery.simplr.smoothscroll.min.js', 'text/javascript');
 $doc->addScript('templates/'.$this->template.'/js/dp_template.js', 'text/javascript');
 
 	//Add OG content

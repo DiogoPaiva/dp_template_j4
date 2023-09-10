@@ -11,7 +11,6 @@ $canEdit = $params->get('access-edit');
 $user    = JFactory::getUser();
 $info    = $params->get('info_block_position', 0);
 
-JHtml::_('behavior.caption');
 ?>
 	<div class="artigo empresa item-page<?php echo $this->pageclass_sfx; ?>" >
 		<meta itemprop="inLanguage" content="<?php echo ($this->item->language === '*') ? JFactory::getConfig()->get('language') : $this->item->language; ?>;" />
