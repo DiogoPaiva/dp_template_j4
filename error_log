@@ -1,0 +1,16 @@
+[06-May-2022 22:49:06 UTC] PHP Fatal error:  Uncaught Error: Class 'JFactory' not found in /home/labores2/public_html/templates/dp_template_1/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/labores2/public_html/templates/dp_template_1/index.php on line 9
+[12-Jun-2022 12:24:51 UTC] PHP Fatal error:  Uncaught Error: Class 'JFactory' not found in /home/labores2/public_html/templates/dp_template_1/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/labores2/public_html/templates/dp_template_1/index.php on line 9
+[16-Mar-2023 18:53:01 UTC] PHP Fatal error:  Uncaught Error: Class 'JFactory' not found in /home/labores2/public_html/templates/dp_template_1/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/labores2/public_html/templates/dp_template_1/index.php on line 9
+[01-Sep-2023 10:49:34 UTC] PHP Fatal error:  Uncaught Error: Class 'JFactory' not found in /home/labores2/public_html/templates/dp_template_1/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/labores2/public_html/templates/dp_template_1/index.php on line 9
