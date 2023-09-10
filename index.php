@@ -1,11 +1,12 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.protostar.dp_template
+ * @subpackage  Templates.dp_template.v4
  *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2023 - Diogo Paiva
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
+
 JFactory::getDocument()->setGenerator('');
 defined('_JEXEC') or die;
 
@@ -22,11 +23,11 @@ $language = JFactory::getLanguage();
 $base_dir = dirname(__FILE__); // loads template root path
 $language_tag = $language->getTag(); // loads the current language-tag
 
-/*Declare a unique variable to each new extention */
+/*Declare a unique variable to each new extension */
 $extension = '';
 $content = 'com_content';
 
-/*Run the load function for each extention on the argument*/
+/*Run the load function for each extension on the argument*/
 $language->load($extension, $base_dir, $language_tag, true);
 $language->load($content, $base_dir, $language_tag, true);
 
@@ -41,15 +42,13 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 
-
-
 if($task == "edit" || $layout == "form" ) {
 	$fullWidth = 1;
 } else {
 	$fullWidth = 0;
 }
 
-//Verify if is homepage and language code
+// Verify if is homepage and language code
 $htmlclass;
 $lang = JFactory::getLanguage();
 $menu = $app->getMenu();
@@ -109,7 +108,6 @@ $doc->addScript('templates/'.$this->template.'/js/jquery.bxslider.min.js', 'text
 $doc->addScript('templates/'.$this->template.'/js/image-scale.min.js', 'text/javascript');
 $doc->addScript('templates/'.$this->template.'/js/jquery.mousewheel.min.js', 'text/javascript');
 $doc->addScript('templates/'.$this->template.'/js/jquery.simplr.smoothscroll.min.js', 'text/javascript');
-//$doc->addScript('templates/'.$this->template.'/js/jquery.easing.1.3.js', 'text/javascript');
 $doc->addScript('templates/'.$this->template.'/js/dp_template.js', 'text/javascript');
 
 	//Add OG content
@@ -158,8 +156,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	. ($itemid ? ' itemid-' . $itemid : '');
 ?>">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVHC6ZT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVHC6ZT" height="0" width="0" style="display:none;visibility:hidden">
+	</iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 	<div class="body">

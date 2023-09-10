@@ -17,7 +17,7 @@ $prev = (!empty($row->prev) ? $row->prev : '#');
 
 ?>
 
-<ul class="duratools-nav">
+<ul class="page-nav">
 	<li class="prev">
 		<a class="<?php echo $disablePrev; ?>" href="<?php echo $prev; ?>" rel="prev">
 			<span class="fa fa-angle-left"></span>

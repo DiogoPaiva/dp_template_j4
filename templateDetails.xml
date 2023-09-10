@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="4.1" type="template" client="site">
 
-<extension version="3.1" type="template" client="site">
-
-	<name>DP Template J3- Novo layout</name>
-	<version>1.2</version>
-	<creationDate>11/04/2015</creationDate>
-	<author>Brandspot</author>
-	<authorEmail>diogopaiva@brandspot.pt</authorEmail>
-	<copyright>Based on original Protostar</copyright>
-	<description>Template J3 - Brandspot</description>
+	<name>DP Template J4</name>
+	<version>2.0</version>
+	<creationDate>10/09/2023</creationDate>
+	<author>Diogo Paiva</author>
+	<authorEmail>info@diogopaiva.com</authorEmail>
+	<copyright>Based on dp_temp+late v3</copyright>
+	<description>Template For Joomla V4</description>
 	<files>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
