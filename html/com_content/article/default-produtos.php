@@ -9,10 +9,9 @@
 
 defined('_JEXEC') or die;
 
+use Joomla\CMS\HTML\HTMLHelper;
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-
-JHtml::_('bootstrap.modal', '.modal');
-
+\Joomla\CMS\HTML\HTMLHelper::_('bootstrap.modal', '.modal', []);
 
 $doc = JFactory::getDocument();
 // Create shortcuts to some parameters.
@@ -54,7 +53,8 @@ foreach($myfield as $field) {
                     endif;
                     ?>
                     <a class="modal" href="<?php $imagem = $img_final!== '' ? htmlspecialchars($img_final) : 'images/image_0.jpg'; echo $imagem; ?>">
-                        <?php 
+                       
+                       <?php 
                             if($img_final!== '') : 
                         ?>
                             <img class="img-produto" title="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>";

@@ -59,10 +59,6 @@ if ($menu->getActive() == $menu->getDefault($lang->getTag())) {
 else
 {$htmlclass = $lang->getTag() . " conteudos";}
 
-// Load optional RTL Bootstrap CSS
-JHtml::_('bootstrap.loadCss', false, $this->direction);
-JHtml::_('jquery.framework',  true, true);
-
 // Add Stylesheets
 $doc->addStyleSheet('templates/' . $this->template . '/css/template.css');
 

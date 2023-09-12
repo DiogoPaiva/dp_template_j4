@@ -10,7 +10,7 @@
 
 defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
-JHtml::_('behavior.formvalidation');
+
 
 if (isset($this->error)) : ?>
 	<div class="contact-error">
@@ -74,7 +74,7 @@ if (isset($this->error)) : ?>
 				<input type="hidden" name="option" value="com_contact" />
 				<input type="hidden" name="task" value="contact.submit" />
 				<input type="hidden" name="return" value="<?php echo $this->return_page; ?>" />
-				<input type="hidden" name="id" value="<?php echo $this->contact->slug; ?>" />
+				<input type="hidden" name="id" value="<?php echo $this->item->slug; ?>" />
 				<?php echo JHtml::_('form.token'); ?>
 			</div>
 			<div style="clear: both;"></div>
